@@ -3,41 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog: Tablas Hash</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Blog: Tablas Hash</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    
+
     <h1>Blog Técnico: Tablas Hash</h1>
-    <p>Breve colección de artículos sobre Tablas Hash — conceptos, colisiones e implementación.</p>
-    <nav>
-      <a href="posts/post1.html">Introducción</a>
-      <a href="posts/post2.html">Manejo de colisiones</a>
-      <a href="posts/post3.html">Implementación y operaciones</a>
-    </nav>
+    <h4>Estructura de Datos</h4>
+    <p>Una colección dinámica de artículos sobre Tablas Hash.</p>
+    <button id="new-post-btn">Crear Nuevo Post</button>
   </header>
 
   <main>
-    <section class="post-list">
-      <article>
-        <h2><a href="posts/post1.html">Post #1: Introducción a las Tablas Hash</a></h2>
-        <p>Definición, conceptos clave y una ilustración visual de cómo una función hash genera un índice.</p>
-      </article>
-
-      <article>
-        <h2><a href="posts/post2.html">Post #2: Manejo de Colisiones</a></h2>
-        <p>Comparación entre Encadenamiento y Direccionamiento Abierto (Linear, Quadratic, Double Hashing).</p>
-      </article>
-
-      <article>
-        <h2><a href="posts/post3.html">Post #3: Implementación y Operaciones Fundamentales</a></h2>
-        <p>Detalles de insertar, buscar y eliminar con ejemplos y código en JavaScript.</p>
-      </article>
+    <!-- Formulario para crear/editar posts (inicialmente oculto) -->
+    <section id="post-form-container" class="post-form-container" style="display: none;">
+      <form id="post-form">
+        <input type="hidden" id="post-id" value="">
+        <input type="text" id="post-title" placeholder="Título del post" required>
+        <textarea id="post-content" placeholder="Contenido del post..." rows="5" required></textarea>
+        <div class="form-buttons">
+          <button type="submit">Guardar Post</button>
+          <button type="button" id="cancel-btn">Cancelar</button>
+        </div>
+      </form>
     </section>
+
+    <!-- La lista de posts se generará aquí con JavaScript -->
+    <section id="post-list" class="post-list"></section>
   </main>
 
   <footer>
     <p>Proyecto académico — Estructura de Datos: Tablas Hash</p>
+    <p>Diego Andres Cubillos Cuellar</p>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

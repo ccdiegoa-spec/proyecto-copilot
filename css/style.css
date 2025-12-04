@@ -1,13 +1,69 @@
 /* Estilos simples y responsivos para el blog */
-:root{--bg:#f9f9fb;--card:#fff;--accent:#1f6feb;--muted:#666}
-*{box-sizing:border-box}
-body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:#111;margin:0;padding:20px}
-header{max-width:900px;margin:0 auto 20px;padding:20px;background:var(--card);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-header h1{margin:0 0 6px}
-nav a{margin-right:12px;color:var(--accent);text-decoration:none}
-.post-list{max-width:900px;margin:0 auto;display:grid;gap:12px}
-.post-list article{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
-.post-list h2{margin:0 0 8px}
-footer{max-width:900px;margin:16px auto;color:var(--muted)}
-svg.diagram{width:100%;height:auto;border-radius:6px;background:#fff;padding:8px}
-.code{font-family:Consolas,monospace;background:#0b1020;color:#d6f8ff;padding:8px;border-radius:6px;display:block;white-space:pre-wrap}
+:root {
+  --bg: #f9f9fb;
+  --card: #fff;
+  --accent: #1f6feb;
+  --muted: #666;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #111;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+header h1 {
+  margin: 0 0 6px;
+}
+nav a {
+  margin-right: 12px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.post-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+.post-list article {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+.post-list h2 {
+  margin: 0 0 8px;
+}
+footer {
+  max-width: 900px;
+  margin: 16px auto;
+  color: var(--muted);
+}
+svg.diagram {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #fff;
+  padding: 8px;
+}
+.code {
+  font-family: Consolas, monospace;
+  background: #0b1020;
+  color: #d6f8ff;
+  padding: 8px;
+  border-radius: 6px;
+  display: block;
+  white-space: pre-wrap;
+}
